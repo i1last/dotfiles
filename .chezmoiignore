@@ -1,3 +1,6 @@
 README.md 
 LICENCE 
-__*
+**/__*
+
+./dot_mozilla/firefox/*.default-release/prefs.js
+./dot_config/os/browser/chevron/index.html
