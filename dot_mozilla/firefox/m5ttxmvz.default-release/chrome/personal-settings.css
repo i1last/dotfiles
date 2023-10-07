@@ -1,0 +1,59 @@
+/* remove window control buttons */
+.titlebar-buttonbox-container { display: none !important; }
+#pageActionButton { display: none !important; }
+#PanelUI-menu-button { padding: 0px !important; }
+#PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
+#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
+
+
+:root {
+  /*  Width of the URL Bar for the Oneline layout
+   *  If enabled the max-width is applied on focus
+   *  otherwise the URL Bar will always be it's min-width
+   */ --uc-urlbar-min-width: 25vw;
+      --uc-urlbar-max-width: 35vw;
+}
+
+
+/* Disable the Navigation Buttons */
+#back-button,
+#forward-button { display: none !important; }
+
+/* Disables the Tracking Protection Shield */
+#tracking-protection-icon-container { display: none !important; }
+
+/* Encryption and Permissions icons */
+  /* Hides encryption AND permission items */
+  #identity-box { display: none !important }
+
+/* Hide everything BUT the zoom indicator within the URL Bar */
+#page-action-buttons > :not(#urlbar-zoom-button) { display: none !important; }
+
+/* Hide the »Go«-arrow in the URL Bar */
+#urlbar-go-button { display: none !important; }
+
+/* Hide the secondary Tab Label
+ * e.g. playing indicator (the text, not the icon) */
+.tab-secondary-label { display: none !important; }
+
+@media (min-width: 1000px) {
+  #navigator-toolbox { display: flex !important; flex-direction: row !important; }
+}
+
+#nav-bar {
+  border-right: 1px solid color-mix(in srgb, currentColor 11%, transparent) !important;
+}
+
+.tabbrowser-tab {
+  border-bottom: 1px solid transparent !important;
+}
+
+.tabbrowser-tab[selected][fadein]:not([pinned]) {
+  border-bottom-color: color-mix(in srgb, currentColor 11%, transparent) !important; 
+}
+
+#tabbrowser-arrowscrollbox-periphery {display: none !important;}
+
+#urlbar-input {
+  font-family: sans-serif !important;
+}

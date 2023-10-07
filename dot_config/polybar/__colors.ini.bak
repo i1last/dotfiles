@@ -1,0 +1,72 @@
+; [colors]
+; white = #eeeeee
+; black = #222222
+
+; base = #1e1e2e
+; mantle = #181825
+; crust = #11111b
+
+; text = #cdd6f4
+; subtext0 = #a6adc8
+; subtext1 = #bac2de
+
+; surface0 = #313244
+; surface1 = #45475a
+; surface2 = #585b70
+
+; overlay0 = #6c7086
+; overlay1 = #7f849c
+; overlay2 = #9399b2
+
+
+; blue = #89b4fa
+; lavender = #b4befe
+; sapphire = #74c7ec
+; sky = #89dceb
+; teal = #94e2d5
+; green = #a6e3a1
+; yellow = #f9e2af
+; peach = #fab387
+; maroon = #eba0ac
+; red = #f38ba8
+; mauve = #cba6f7
+; pink = #f5c2e7
+; flamingo = #f2cdcd
+; rosewater = #f5e0dc
+
+; transparent = #FF00000
+
+
+
+[colors]
+; md3 dark
+primary = #bfc1ff
+on_primary = #0900ab
+primary_container = #2627cc
+on_primary_container = #e1e0ff
+secondary = #89da6a
+on_secondary = #0b3900
+secondary_container = #145200
+on_secondary_container = #a4f783
+tertiary = #ffb695
+on_tertiary = #571f00
+tertiary_container = #7a3003
+on_tertiary_container = #ffdbcc
+error = #ffb4ab
+error_container = #93000a
+on_error = #690005
+on_error_container = #ffdad6
+background = #1b1b1f
+on_background = #e5e1e6
+surface = #1b1b1f
+on_surface = #e5e1e6
+surface_variant = #46464f
+on_surface_variant = #c7c5d0
+outline = #918f9a
+inverse_on_surface = #1b1b1f
+inverse_surface = #e5e1e6
+inverse_primary = #4347e3
+shadow = #000000
+surface_tint = #bfc1ff
+outline_variant = #46464f
+scrim = #000000

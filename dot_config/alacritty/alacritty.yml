@@ -1,0 +1,113 @@
+colors:
+    primary:
+        background: "#1b1b1f" # background
+        foreground: "#e5e1e6" # on-background
+        # Bright and dim foreground colors
+        dim_foreground: "#e5e1e6" # on-background
+        bright_foreground: "#e5e1e6" # on-background
+
+    # Cursor colors
+    cursor:
+        text: "#1b1b1f" # background
+        cursor: "#bfc1ff" # primary
+    vi_mode_cursor:
+        text: "#1b1b1f" # background
+        cursor: "#bfc1ff" # primary
+
+    # Search colors
+    search:
+        matches:
+            foreground: "#1b1b1f" # background
+            background: "#e5e1e6" # on-background
+        focused_match:
+            foreground: "#1b1b1f" # background
+            background: "#89da6a" # secondary
+        footer_bar:
+            foreground: "#1b1b1f" # background
+            background: "#e5e1e6" # on-background
+
+    # Keyboard regex hints
+    hints:
+        start:
+            foreground: "#1b1b1f" # background
+            background: "#ffb695" # tertiary
+        end:
+            foreground: "#1b1b1f" # background
+            background: "#e5e1e6" # on-background
+
+    # Selection colors
+    selection:
+        text: "#1b1b1f" # background
+        background: "#bfc1ff" # primary
+
+    # Normal colors
+    normal:
+        black: "#444444" # black
+        red: "#F38BA8" # red
+        green: "#89da6a" # secondary
+        yellow: "#ffb695" # tertiary
+        blue: "#89B4FA" # blue
+        magenta: "#F5C2E7" # pink
+        cyan: "#94E2D5" # teal
+        white: "#cccccc" # white
+
+    # Bright colors
+    bright:
+        black: "#555555" # black lighten
+        red: "#F38BA8" # red
+        green: "#89da6a" # secondary
+        yellow: "#ffb695" # tertiary
+        blue: "#89B4FA" # blue
+        magenta: "#F5C2E7" # pink
+        cyan: "#94E2D5" # teal
+        white: "#eeeeee" # white lighten
+
+    # Dim colors
+    dim:
+        black: "#111111" # black darken
+        red: "#F38BA8" # red
+        green: "#89da6a" # secondary
+        yellow: "#ffb695" # tertiary
+        blue: "#89B4FA" # blue
+        magenta: "#F5C2E7" # pink
+        cyan: "#94E2D5" # teal
+        white: "#aaaaaa" # white darken
+
+    indexed_colors:
+        - { index: 16, color: "#FAB387" }
+        - { index: 17, color: "#F5E0DC" }
+
+font:
+    normal:
+        family: JetBrainsMono Nerd Font
+        style: Regular
+
+    bold:
+        family: JetBrainsMono Nerd Font
+        style: Bold
+
+    italic:
+        family: JetBrainsMono Nerd Font
+        style: Italic
+
+    bold_italic:
+        family: JetBrainsMono Nerd Font
+        style: Bold Italic
+
+    size: 12
+
+shell:
+    zsh
+
+cursor:
+    style:
+        shape: Underline
+
+mouse:
+    hide_when_typing: true
+
+key_bindings:
+    - { key: W, mods: Alt, action: ScrollLineUp}
+    - { key: S, mods: Alt, action: ScrollLineDown}
+    - { key: A, mods: Alt, action: ScrollHalfPageUp}
+    - { key: D, mods: Alt, action: ScrollHalfPageDown}

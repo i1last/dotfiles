@@ -1,0 +1,27 @@
+fx_list=()
+quiet=false # Не выводить ничего в терминал при запуске при true
+locktext="Type password..."
+font="JetBrains Mono Nerd Font"
+time_format="%H:%M:%S"
+veriftext="Verifying..."
+wrongtext="Failure!"
+solid_color=46464f
+
+bgcolor=1b1b1f # цвет фона всего
+
+timecolor=e5e1e6 # цвет time_format
+greetercolor=e5e1e6 # цвет locktext
+layoutcolor=e5e1e6 # цвет раскладки клавиатуры
+verifcolor=e5e1e6 # цвет надписи veriftext
+wrongcolor=690005 # цвет надписи wrongtext
+modifcolor=690005 # цвет надписи спец. клавиш (numlock, etc) при ошибке пароля
+
+ringcolor=46464f # цвет окружности во времени ожидания пароля
+ringvercolor=bfc1ff # цвет окружности во время проверки пароля
+ringwrongcolor=ffb4ab # цвет окружности при ошибке
+insidecolor=46464f # цвет круга во времени ожидания пароля
+insidevercolor=46464f # цвет круга во время проверки пароля
+insidewrongcolor=46464f # цвет круга при ошибке
+
+keyhlcolor=c7c5d0 # цвет части окружности при вводе пароля
+bshlcolor=ffb695 # цвет части окружности при стирании пароля

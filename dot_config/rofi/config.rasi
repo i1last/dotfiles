@@ -1,0 +1,192 @@
+/* wiki: man --locale=ru --html=firefox rofi-theme.5 */
+
+@import "colors.rasi"
+
+* {
+    --font: "JetBrains Mono Nerd Font 11";
+}
+
+configuration {
+    modi: [ drun, run, filebrowser ];
+    show-icons: false;
+    display-drun: " ";
+    display-run: " ";
+    display-filebrowser: " ";
+    display-window: " ";
+	drun-display-format: "{name}";
+	window-format: "{w} · {c} · {t}";
+}
+
+window {
+    font: @--font;
+    location: west;
+    auchor: west;
+    fullscreen: false;
+    width: 360px;
+    height: calc(100% - 28px); // 28px is the polybar height
+    x-offset: 0px;
+    y-offset: calc(28px / 2); // 28px is the polybar height
+
+    enabled: true;
+    margin: 0px;
+    padding: 0px;
+    border: 1px 1px 1px 0px solid;
+    border-color: @--slate3;
+    border-radius: 0px;
+    cursor: "default";
+    background-color: @--bg;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 20px;
+    padding: 40px;
+    border: 0px solid;
+    border-radius: 0px;
+    children: [ inputbar, message, listview, mode-switcher ];
+}
+
+inputbar {
+    enabled: true;
+    spacing: 10px;
+    padding: 8px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: @--slate3;
+    text-color: @--light1;
+    children: [ prompt, entry, num-filtered-rows ];
+}
+
+prompt {
+    enabled: true;
+    background-color: inherit;
+    text-color: inherit;
+}
+
+entry {
+    enabled: true;
+    background-color: inherit;
+    text-color: inherit;
+    cursor: text;
+    placeholder: "search...";
+    placeholder-color: inherit;
+}
+
+num-filtered-rows {
+    enabled: true;
+    background-color: inherit;
+    text-color: @--light4;
+    expand: false;
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 10;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+
+    spacing: 4px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid;
+    border-radius: 0px;
+    background-color: transparent;
+    text-color: @--fg;
+    cursor: "normal";
+}
+
+element {
+    enabled: true;
+    spacing: 8px;
+    margin: 0px;
+    padding: 8px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: transparent;
+    text-color: @--fg;
+    cursor: pointer;
+}
+
+element normal.normal,
+element normal.active,
+element alternate.normal,
+element alternate.active {
+    background-color: transparent;
+    text-color: @--fg;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color: @--error;
+    text-color: @--fg;
+}
+
+element selected.normal,
+element selected.active,
+element selected.urgent {
+    background-color: @--fg;
+    text-color: @--bg;
+}
+
+mode-switcher {
+    enabled: true;
+    spacing: 12px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: @--slate3;
+    text-color: @--fg;
+}
+
+button {
+    padding: 8px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: transparent;
+    text-color: inherit;
+    cursor: pointer;
+}
+
+button selected {
+    background-color: @--fg;
+    text-color: @--bg;
+}
+
+message {
+    enabled: true;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid;
+    border-radius: 0px;
+    background-color: transparent;
+    text-color: @--fg;
+}
+
+textbox {
+    padding: 8px;
+    border: 0px solid;
+    border-radius: 4px;
+    background-color: @--slate3;
+    text-color: @--light1;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    highlight: none;
+    placeholder-color: @--fg;
+    blink: true;
+    markup: true;
+}
+
+error-message {
+    padding: 12px;
+    border: 0px solid;
+    border-radius: 0px;
+    background-color: @--bg;
+    text-color: @--fg;
+}
