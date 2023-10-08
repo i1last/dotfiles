@@ -2,10 +2,10 @@ unz() {
     unzip $1 -d ${1%.*}
 }
 
-alias ls="exa -1"
-alias l="exa --long"
-alias la="exa --long --all --group"
-alias lt="exa --tree --level"
+alias ls="eza -1"
+alias l="eza --long"
+alias la="eza --long --all --group"
+alias lt="eza --tree --level"
 alias mat="tldr"
 alias man="man --locale=ru"
 alias manb="man --locale=ru --html=firefox"
