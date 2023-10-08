@@ -26,11 +26,11 @@ bspc config automatic_scheme longest_side
 bspc config initial_polarity second_child
 bspc config single_monocle true
 bspc config focus_follows_pointer true
-bspc config pointer_modifier mod3
+bspc config pointer_modifier mod4
 bspc config remove_disabled_monitors true
 bspc config merge_overlapping_monitors true
 bspc config pointer_motion_interval 16
-
+bspc config pointer_action1 move
 
 # Init apps
 killall sxhkd dunst polybar greenclip syncthing
