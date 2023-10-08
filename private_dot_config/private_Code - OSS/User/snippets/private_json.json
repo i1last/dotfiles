@@ -1,0 +1,16 @@
+{
+	"jlink": {
+		"prefix": "jlink",
+		"body": [
+      "<a class=\\\"link\\\" target=\\\"_blank\\\" href=\\\"$1\\\">Видео-пример$2</a>"
+		],
+		"description": "jlink"
+	},
+  "jimg": {
+		"prefix": "jimg",
+		"body": [
+      "<a class=\\\"link\\\" target=\\\"_blank\\\" href=\\\"./images/$1.svg\\\">Формула$2</a>"
+		],
+		"description": "jimg"
+	},
+}

@@ -1,0 +1,10 @@
+{
+	"const require": {
+		"prefix": "creq",
+		"body": [
+			"const $1 = require('$2');",
+			"$3"
+		],
+		"description": "const require"
+	}
+}

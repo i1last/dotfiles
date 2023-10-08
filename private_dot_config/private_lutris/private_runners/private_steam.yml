@@ -1,0 +1,4 @@
+steam:
+  lsi_steam: true
+system:
+  disable_runtime: false

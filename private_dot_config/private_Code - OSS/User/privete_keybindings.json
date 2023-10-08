@@ -1,0 +1,7 @@
+// Поместите настраиваемые сочетания клавиш в этот файл, чтобы переопределить сочетания клавиш по умолчанию.
+[
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  }
+]

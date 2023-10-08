@@ -1,0 +1,271 @@
+{
+    ////// WORKBENCH //////
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#fff" //#b7b7b7"
+    },
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": false,
+    "workbench.tips.enabled": false,
+    "editor.rulers": [],
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Material Design Icons Desktop', 'MesloLGS NF'",
+    "editor.peekWidgetDefaultFocus": "editor",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "editor.renderLineHighlight": "none",
+    "editor.fontWeight": 500,
+    "editor.lineHeight": 3,
+    "editor.fontSize": 16,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.smoothScrolling": true,
+    "editor.fontLigatures": true,
+    "editor.parameterHints.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.lightbulb.enabled": false,
+    // "editor.formatOnType": true,
+    ////// FORMATTER //////
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+        "prettier.tabWidth": 2
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[njk]": {
+        "editor.defaultFormatter": "eseom.nunjucks-template",
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    ////// TERMINAL //////
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'Material Design Icons Desktop', 'MesloLGS NF'",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.tabs.enabled": false,
+    ////// FILES //////
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    ////// OTHERS //////
+    "security.workspace.trust.untrustedFiles": "open",
+    "emmet.triggerExpansionOnTab": true,
+    "color-highlight.matchWords": true,
+    "color-highlight.markRuler": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    ////// EXTENSIONS //////
+    "extensions.autoUpdate": false,
+    //// markdown ////
+    "markdown.extension.italic.indicator": "_",
+    "markdown.extension.theming.decoration.renderHardLineBreak": true,
+    "markdown.extension.print.absoluteImgPath": false,
+    "markdown.extension.math.enabled": false,
+    //// python ////
+    "python.linting.flake8Args": [
+        "--max-line-length=120"
+    ],
+    "python.languageServer": "Jedi",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": false,
+    //// cspell ////
+    "cSpell.userWords": [
+        "alacritty",
+        "Amoled",
+        "avaibleTabl",
+        "BSPDIR",
+        "Oled",
+        "PICOM",
+        "бóльшей",
+        "перепрошиться",
+        "техноблогеров",
+        "фича"
+    ],
+    "cSpell.diagnosticLevel": "Hint",
+    //// prettier ////
+    "prettier.trailingComma": "all",
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.bracketSameLine": true,
+    "prettier.bracketSpacing": true,
+    "prettier.singleQuote": false,
+    //// UNKNOWN ////
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.root": "/docs",
+    "cssPeek.peekFromLanguages": [
+        "html",
+        "django-html",
+        "laravel-blade",
+        "razor",
+        "vue",
+        "blade",
+        "pug",
+        "jade",
+        "handlebars",
+        "php",
+        "twig",
+        "md",
+        "nunjucks",
+        "javascript",
+        "javascriptreact",
+        "erb",
+        "typescript",
+        "typescriptreact",
+        "HTML (Eex)",
+        "html-eex",
+        "ejs",
+        "njk",
+        "nunjucks"
+    ],
+    "html.format.wrapLineLength": 80,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.cursorBlinking": "solid",
+    "terminal.integrated.cursorStyle": "underline",
+    "editor.colorDecorators": false,
+    "editor.matchBrackets": "never",
+    "tabnine.experimentalAutoImports": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.showIcons": false,
+    "editor.suggestLineHeight": 36,
+    "editor.suggest.localityBonus": true,
+    "editor.detectIndentation": false,
+    "editor.lineNumbers": "off",
+    "editor.hover.enabled": false,
+    "editor.linkedEditing": true,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.file": "404.html",
+    "window.zoomLevel": 1,
+    "liveSassCompile.settings.showOutputWindowOn": "None",
+    "window.menuBarVisibility": "toggle",
+    "workbench.sideBar.location": "right",
+    "editor.cursorSurroundingLines": 5,
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+    "breadcrumbs.enabled": false,
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "cSpell.language": "en,ru",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "scss.format.braceStyle": "expand",
+    "scss.format.spaceAroundSelectorSeparator": true,
+    "editor.minimap.enabled": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.activityBar.visible": false,
+    "editor.showFoldingControls": "never",
+    "notebook.showFoldingControls": "never",
+    "editor.foldingHighlight": false,
+    "editor.indentSize": "tabSize",
+    "markdown.preview.fontSize": 16,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": [
+                "latexmk_rconly"
+            ]
+        },
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk"
+            ]
+        },
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "xelatexmk"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex * 2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "Compile Rnw files",
+            "tools": [
+                "rnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Compile Jnw files",
+            "tools": [
+                "jnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Compile Pnw files",
+            "tools": [
+                "pnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        }
+    ],
+    "colorize.exclude": [
+        "**/.git",
+        "**/.svn",
+        "**/.hg",
+        "**/CVS",
+        "**/.DS_Store",
+        "**/node_modules",
+        "**/bower_components"
+    ],
+    "colorize.languages": [
+        "ini",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ]
+}

@@ -1,0 +1,8 @@
+system:
+  mangohud: false
+wine:
+  Desktop: false
+  battleye: false
+  eac: false
+  show_debug: -all
+  version: lutris-GE-Proton8-13-x86_64
