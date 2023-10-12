@@ -53,8 +53,7 @@ xdg-settings set default-web-browser firefox.desktop
 
 
 # Set random wall and generate color scheme
-wal -i ${os}/walls/ --backend haishoku
-wal-telegram --wal  # On Telegram Desktop: Settings -> Chat settings -> Choose from file -> "~/.cache/wal-telegram/*.tdesktop-theme" -> Keep changes
+${os}/scripts/set-wall.sh
 source $HOME/.cache/wal/colors.sh
 
 

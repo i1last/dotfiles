@@ -76,6 +76,6 @@ case ${chosen} in
         run_cmd --logout
         ;;
     $wall)
-        wal -i ${os}/walls/
+        ${os}/scripts/set-wall.sh
         ;;
 esac
