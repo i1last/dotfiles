@@ -113,3 +113,7 @@ alt + {3,KP_3}
 # right quotation mark
 alt + {4,KP_4}
   echo "»" | xclip -sel clip
+
+# open syncthing localhost:8384 in xdg default browser
+alt + s 
+  xdg-open localhost:8384

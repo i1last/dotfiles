@@ -7,7 +7,7 @@ while IFS= read -r line; do
         read -r next_line
         options+="$next_line $line"$'\n'
     fi
-done < ${workdir}/sxhkdrc
+done < ${bspwm}/sxhkdrc
 
 options="${options%?}"
 
