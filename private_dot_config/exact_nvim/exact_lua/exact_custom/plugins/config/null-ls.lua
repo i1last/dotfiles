@@ -1,19 +1,19 @@
--- Formatter 
+-- Formatter
 
-local null_ls = require "null-ls"
+local null_ls = require("null-ls")
 
 local formatting = null_ls.builtins.formatting
 local lint = null_ls.builtins.diagnostics
 
 local sources = {
-  formatting.prettier,
-  formatting.stylua,
-  formatting.beautysh,
+	formatting.prettier,
+	formatting.stylua,
+	formatting.beautysh,
 
-  lint.jsonlint,
+	lint.jsonlint,
 }
 
-null_ls.setup {
-  debug = true,
-  sources = sources,
-}
+null_ls.setup({
+	debug = true,
+	sources = sources,
+})

@@ -1,3 +1,5 @@
-require('custom.settings.opt')
-require('custom.settings.cmd')
-require('custom.settings.russian-language-support')
+require("custom.settings.api")
+require("custom.settings.g")
+require("custom.settings.opt")
+require("custom.settings.cmd")
+require("custom.settings.russian-language-support")

@@ -1,18 +1,18 @@
 -- Highlighter
 
 local opts = {
-    ensure_installed = {
-      "vim",
-      "lua",
+	ensure_installed = {
+		"vim",
+		"lua",
 
-      "html",
-      "css",
-      "scss",
-      "javascript",
-      "json",
+		"html",
+		"css",
+		"scss",
+		"javascript",
+		"json",
 
-      "markdown",
-      "python",
-  }
+		"markdown",
+		"python",
+	},
 }
 return opts

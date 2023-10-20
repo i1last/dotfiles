@@ -1,10 +1,10 @@
--- File browser on the side 
+-- File browser on the side
 
-local opts ={
-  view = {
-    width = 25,
-    side = "right"
-  }
+local opts = {
+	view = {
+		width = 25,
+		side = "right",
+	},
 }
 
 return opts

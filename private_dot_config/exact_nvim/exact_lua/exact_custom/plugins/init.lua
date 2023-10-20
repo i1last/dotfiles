@@ -1,11 +1,19 @@
 local plugins = {
-	-- Support for LaTeX
+	-- Conceal for .tex files
 	{
-		"lervag/vimtex",
-		lazy = false,
-		config = function()
-			require("custom.plugins.config.vimtex")
-		end,
+		"KeitaNakamura/tex-conceal.vim",
+		-- config in settings/g.lua and in plugins/config/nvim-lspconfig.lua
+	},
+
+	-- Extends vim's `%`
+	{
+		"andymass/vim-matchup",
+	},
+
+	-- Snippets manager
+	{
+		"SirVer/ultisnips",
+		-- config in settings/g.lua
 	},
 
 	-- Package installer
