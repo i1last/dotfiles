@@ -63,12 +63,13 @@ local plugins = {
 		end,
 	},
 
-	-- Multi cursor
-	{
-		"mg979/vim-visual-multi",
-		branch = "master",
-		lazy = false,
-	},
+  -- TODO: Delete this
+	-- Multi cursor 
+	-- {
+	-- 	"mg979/vim-visual-multi",
+	-- 	branch = "master",
+	-- 	lazy = false,
+	-- },
 }
 
 return plugins
