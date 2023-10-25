@@ -42,8 +42,7 @@ syncthing &  # web interface http://localhost:8384
 
 
 # Init cmds
-setxkbmap -option caps:escape
-setxkbmap -layout us,ru -option grp:win_space_toggle
+xkbcomp $HOME/.config/xkb/config $DISPLAY
 xsetroot -cursor_name left_ptr
 xset r rate 170 40
 synclient PalmDetect=1 HorizEdgeScroll=1 TapButton1=1 TapButton2=3 TapButton3=2 MaxSpeed=2

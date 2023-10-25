@@ -1,4 +1,4 @@
-# open terminal by $TERM
+# open terminal by $TERMINAL
 super + Return
   $TERMINAL
 
@@ -11,56 +11,16 @@ super + e
   rofimoji -a copy -f general_punctuation emoji latin-1_supplement greek_and_coptic
 
 # open clipboard history by rofi-greenclip
-super + h 
+super + c 
   rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # open powermenu
 super + ctrl + x
-  powermenu.sh
+  menu.sh
 
 # open hotkey list
 super + ctrl + backslash
   hotkeys.sh
-
-# open flameshot
-super + Print
-  flameshot gui
-
-# force kill window by xkill
-super + shift + k
-  xkill
-
-# close/kill window
-super + {_, shift + }q
-  bspc node -{c,k}
-
-# fullscreen window mode
-super + shift + {f,f}
-  bspc node -t {fullscreen,tiled}
-
-# floating window mode
-super + shift + {t,t}
-  bspc node -t {tiled,floating}
-
-# move window/focus
-super + {_,shift + }{a,s,w,d}
-  bspc node -{f,s} {west,south,north,east}
-
-# switch between two last workspaces
-super + Tab
-  bspc desktop -f last
-
-# (move window)/switch to selected workspace
-super + {_,shift + }{1-6}
-  bspc {desktop -f,node -d} {1-6}
-
-# select open window place
-super + ctrl + {a,s,w,d}
-  bspc node -p {west,south,north,east}
-
-# cancel open window place
-super + ctrl + space
-  bspc node -p cancel
 
 # enlarge window in selected direction
 super + ctrl + shift + {Left,Down,Up,Right}
@@ -70,9 +30,41 @@ super + ctrl + shift + {Left,Down,Up,Right}
 super + ctrl + {Left,Down,Up,Right}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
+# fullscreen window mode
+super + ctrl + {f,f}
+  bspc node -t {fullscreen,tiled}
+
+# floating window mode
+super + ctrl + {t,t}
+  bspc node -t {tiled,floating}
+
 # moving floating window
-super + shift + {Left,Down,Up,Right}
+super + ctrl + {h,j,k,l}
   bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# move window/focus
+super + {_,shift + }{h,j,k,l}
+  bspc node -{f,s} {west,south,north,east}
+
+# (move window)/switch to selected workspace
+super + {_,shift + }{1-6}
+  bspc {desktop -f,node -d} {1-6}
+
+# close/kill window
+super + {_, shift + }q
+  bspc node -{c,k}
+
+# force kill window by xkill
+super + shift + k
+  xkill
+
+# switch between two last workspaces
+super + Tab
+  bspc desktop -f last
+
+# open flameshot
+Print
+  flameshot gui
 
 # up volume
 XF86AudioRaiseVolume
@@ -94,26 +86,10 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
   brightnessctl s 10%-
 
-# find out the name of the key
-super + Escape
-  $TERM -e sh -c "xev | awk -F '[ )]+' '/^KeyPress/ \{ a[NR+2] \} NR in a \{ printf \"%-3s %s\n\", \$5, \$8 \}'"
+# middle/long line 
+alt + {_,shift + }m
+  xdotool keyup alt+{,shift+}m type {'‒','—'}
 
-# middle line 
-alt + {1,KP_1}
-  echo "‒" | xclip -sel clip
-
-# long line 
-alt + {2,KP_2}
-  echo "—" | xclip -sel clip
-
-# left quotation mark
-alt + {3,KP_3}
-  echo "«" | xclip -sel clip
-
-# right quotation mark
-alt + {4,KP_4}
-  echo "»" | xclip -sel clip
-
-# open syncthing localhost:8384 in xdg default browser
-alt + s 
-  xdg-open localhost:8384
+# left/right quotation mark
+alt + {_,shift + }apostrophe
+  xdotool keyup alt+{,shift+}apostrophe type {'«','»'}
