@@ -33,12 +33,16 @@ bspc config pointer_motion_interval 16
 bspc config pointer_action1 move
 
 # Init apps
-killall sxhkd dunst polybar greenclip syncthing
+killall sxhkd dunst polybar greenclip syncthinga http-server
 sxhkd -c ${bspwm}/sxhkdrc &
 polybar -q default &
 dunst &
 greenclip daemon &
 syncthing &  # web interface http://localhost:8384
+# Required `npm install http-server -g`
+# Available on http://127.0.0.1:8080
+# In browser use extension "new tab override"
+http-server $HOME/.config/chevron/ &
 
 
 # Init cmds
