@@ -1,0 +1,14 @@
+// Init this by `xkbcomp ${this.file} $DISPLAY`
+xkb_keymap {
+  xkb_keycodes { include "evdev+aliases(qwerty)" };
+  xkb_types    { include "complete" };
+  xkb_compat   { include "complete" };
+  xkb_geometry { include "pc(pc104)" };
+  
+  xkb_symbols "my" {
+    include "pc+us+ru:2+inet(evdev)"
+
+    key <RALT> {[ ISO_First_Group, ISO_Last_Group ]};
+    key <CAPS> {[ Escape ]};
+  };
+};
