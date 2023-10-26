@@ -54,6 +54,10 @@
 
 #tabbrowser-arrowscrollbox-periphery {display: none !important;}
 
+#urlbar {
+  text-align: center !important;
+}
+
 #urlbar-input {
   font-family: sans-serif !important;
 }
