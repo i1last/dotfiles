@@ -1,0 +1,12 @@
+[Install{{- .firefox.releaseId -}}]
+Default={{- .firefox.releasePath }}
+Locked=1
+
+[General]
+StartWithLastProfile=1
+Version=2
+
+[Profile0]
+Name=default-release
+IsRelative=0
+Path={{- .firefox.releasePath }}

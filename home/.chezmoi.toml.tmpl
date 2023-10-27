@@ -1,0 +1,11 @@
+{{- /* Read https://github.com/twpayne/chezmoi/issues/1226#issuecomment-867228095 for more info */ -}}
+{{- $releasePath := joinPath .chezmoi.homeDir "/.config/firefox/profiles/default-release" -}}
+{{- $nightlyPath := joinPath .chezmoi.homeDir "/.config/firefox/profiles/default-nightly" -}}
+{{- $releaseId := mozillaInstallHash "/usr/lib/firefox" -}}
+{{- $nightlyId := mozillaInstallHash "/opt/firefox-nightly" -}}
+
+[data.firefox]
+  releasePath = "{{- $releasePath -}}"
+  nightlyPath = "{{- $nightlyPath -}}"
+  releaseId = "{{- $releaseId -}}"
+  nightlyId = "{{- $nightlyId -}}"
