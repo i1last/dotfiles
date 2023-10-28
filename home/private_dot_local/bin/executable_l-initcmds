@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+xkbcomp $HOME/.config/xkb/config $DISPLAY &> /dev/null
+xsetroot -cursor_name left_ptr
+xset r rate 170 40
+synclient PalmDetect=1 HorizEdgeScroll=1 TapButton1=1 TapButton2=3 TapButton3=2 MaxSpeed=2
+xset s 0 0; xset dpms 0 0 0; xset -dpms
+numlockx

@@ -13,7 +13,7 @@ c () {
 # eza
 alias l="eza --long --group-directories-first --icons --hyperlink --all --no-user --no-filesize --no-time"
 alias la="eza --long --group-directories-first --icons --hyperlink --all --header --git --time-style=relative --mounts --no-user"
-alias ls="eza --group-directories-first"
+alias ls="eza --group-directories-first --icons --hyperlink"
 lt () {
   if [[ -z $1 ]]; then
     eza --long --group-directories-first --icons --hyperlink --all --no-user --no-filesize --no-time --tree --level=1

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+feh --bg-fill "$(< $LCACHE/wal/wal)"
+l-changetheme --only-set

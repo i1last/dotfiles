@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+killall sxhkd polybar dunst greenclip syncthing http-server &> /dev/null
+
+sxhkd &> /dev/null &
+polybar -q default &> /dev/null &
+dunst &> /dev/null &
+greenclip daemon &> /dev/null &
+
+# web interface http://localhost:8384
+syncthing &> /dev/null &
+
+# Required `npm install http-server -g`
+# Available on http://127.0.0.1:8080
+# In browser use extension "new tab override"
+http-server $HOME/.config/chevron/ &> /dev/null &

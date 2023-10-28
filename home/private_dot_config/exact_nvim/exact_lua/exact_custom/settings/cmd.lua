@@ -12,3 +12,6 @@ c("cnoreabbrev й q")
 c("cnoreabbrev ф a")
 c("cnoreabbrev цй wq")
 c("cnoreabbrev цйф wqa")
+
+-- Отключить "умное" комментирование neovim
+c("autocmd FileType * setlocal formatoptions-=cro")

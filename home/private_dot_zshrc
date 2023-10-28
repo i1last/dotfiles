@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh 
+
 ZSH_PATH="$HOME/.zsh"
 CONFIG_PATH="$ZSH_PATH/config.zsh"
 ALIASES_PATH="$ZSH_PATH/aliases.zsh"
@@ -39,3 +41,5 @@ antigen apply
 
 
 source $ALIASES_PATH
+
+bindkey "^I" autosuggest-accept

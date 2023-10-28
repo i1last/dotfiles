@@ -13,6 +13,7 @@ local plugins = {
 	-- Snippets manager
 	{
 		"SirVer/ultisnips",
+		-- lazy = false,
 		-- config in settings/g.lua
 	},
 

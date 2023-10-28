@@ -1,0 +1,35 @@
+#!/usr/bin/env bash 
+
+colorchemeFile="$LSTATE/colorscheme/colorscheme"
+
+updateTheme() {
+  wal-telegram --wal &> /dev/null  # On Telegram Desktop: Settings -> Chat settings -> Choose from file -> "~/.cache/wal-telegram/*.tdesktop-theme" -> Keep changes
+  pywal-discord  # for BetterDiscord
+}
+
+setTheme() {
+  theme=$(< $colorchemeFile)
+
+  if [[ $theme == 'auto' ]]; then
+    wal -qni $LSHARE/wallpapers/ --backend haishoku
+    updateTheme
+  else 
+    if [[ $userThemes =~ $theme ]]; then 
+      wal -q --theme $LSHARE/colorschemes/${theme}.json
+    else
+      wal -q --theme $theme 
+    fi
+  fi
+}
+
+if [[ $1 == "--only-set" ]]; then
+  setTheme
+  exit 0
+fi
+
+userThemes=$(ls -1 $CHEZMOI_SOURCE_DIR/private_dot_config/os/colorschemes/ | sed 's/.json//')
+defaultThemes=$(ls -1 /usr/lib/python3.11/site-packages/pywal/colorschemes/dark/ | sed 's/.json//')
+themes="auto $userThemes $defaultThemes"
+
+echo $themes | rofi -dmenu -p '' -sep ' ' > $colorchemeFile
+setTheme

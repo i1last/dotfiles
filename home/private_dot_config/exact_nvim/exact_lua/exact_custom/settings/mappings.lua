@@ -2,8 +2,10 @@ local M = {}
 
 M.nvimtree = {
 	n = {
-		["<leader>cl"] = { "<cmd> NvimTreeCollapse <CR>", "Collaplse all in nvimtree" },
 		["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
+		["<leader>cl"] = { "<cmd> NvimTreeCollapse <CR>", "Collaplse all in nvimtree" },
+		["<leader>tl"] = { "<cmd> NvimTreeResize 50 <CR>", "Resize nvimtree to 50" },
+		["<leader>ts"] = { "<cmd> NvimTreeResize 25 <CR>", "Resize nvimtree to 25 (default)" },
 	},
 }
 
