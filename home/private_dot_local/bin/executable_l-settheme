@@ -12,14 +12,18 @@ setTheme() {
 
   if [[ $theme == 'auto' ]]; then
     wal -qni $LSHARE/wallpapers/ --backend haishoku
-    updateTheme
+    feh --bg-fill "$(< $LCACHE/wal/wal)"
   else 
-    if [[ $userThemes =~ $theme ]]; then 
-      wal -q --theme $LSHARE/colorschemes/${theme}.json
+    if [[ $theme =~ $userThemes ]]; then  # if theme in userThemes | that is, if a userTheme is selected
+      wal -qn --backend haishoku --theme $LSHARE/colorschemes/${theme}.json
     else
-      wal -q --theme $theme 
+      wal -qn --backend haishoku --theme $theme 
     fi
+
+    feh --bg-fill --randomize $LSHARE/wallpapers/*
   fi
+
+  updateTheme
 }
 
 if [[ $1 == "--only-set" ]]; then
@@ -27,9 +31,9 @@ if [[ $1 == "--only-set" ]]; then
   exit 0
 fi
 
-userThemes=$(ls -1 $CHEZMOI_SOURCE_DIR/private_dot_config/os/colorschemes/ | sed 's/.json//')
+userThemes=$(ls -1 $LSHARE/colorschemes/ | sed 's/.json//')
 defaultThemes=$(ls -1 /usr/lib/python3.11/site-packages/pywal/colorschemes/dark/ | sed 's/.json//')
 themes="auto $userThemes $defaultThemes"
 
-echo $themes | rofi -dmenu -p '' -sep ' ' > $colorchemeFile
+echo $themes | rofi -dmenu -i -p '' -sep ' ' > $colorchemeFile
 setTheme

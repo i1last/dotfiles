@@ -35,7 +35,7 @@ confirm_run_cmd() {
 }
 
 # Actions
-chosen="$(echo -e "$lock\n$reboot\n$shutdown\n$suspend\n$logout\n$logkey\n$syncthing\n$wall\n$theme\n$restart" | rofi -dmenu -p '' -mesg "Uptime: $(uptime -p | sed -e 's/up //g')")"
+chosen="$(echo -e "$lock\n$reboot\n$shutdown\n$suspend\n$logout\n$logkey\n$syncthing\n$wall\n$theme\n$restart" | rofi -dmenu -i -p '' -mesg "Uptime: $(uptime -p | sed -e 's/up //g')")"
 case ${chosen} in
   $shutdown)
     confirm_run_cmd --shutdown
@@ -56,10 +56,10 @@ case ${chosen} in
     confirm_run_cmd --logout
     ;;
   $wall)
-    l-setwall
+    l-settheme --only-set
     ;;
   $theme)
-    l-changetheme
+    l-settheme
     ;;
   $logkey)
     l-logkey

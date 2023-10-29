@@ -18,14 +18,14 @@ export QT_QPA_PLATFORMTHEME=gtk3
 export TDESKTOP_I_KNOW_ABOUT_GTK_INCOMPATIBILITY=1
 export BROWSER="firefox"
 
+# Set color scheme and random wallpaper
+l-settheme --only-set
+
 # Init apps
 l-initapps
 
 # Init cmds
 l-initcmds
-
-# Set random wall and generate color scheme
-l-setwall
 
 # Setting bspwm
 l-configurebspwm
