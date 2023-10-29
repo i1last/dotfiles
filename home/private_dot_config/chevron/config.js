@@ -141,8 +141,8 @@ window.CONFIG = {
       category: 'Programming',
       name: 'GitHub Stars',
       icon: 'github',
-      url: 'https://github.com/stars',
-      normalisedURL: 'github.com/stars',
+      url: 'https://github.com/i1last?tab=stars',
+      normalisedURL: 'github.com/i1last?tab=stars',
       triggers: [
         'gs',
         'gits',
