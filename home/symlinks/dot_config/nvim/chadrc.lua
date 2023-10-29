@@ -2,7 +2,7 @@
 local M = {}
 
 M.ui = {
-	theme = "gruvbox",
+	theme = "rosepine",
 	statusline = {
 		theme = "default",
 		separator_style = "block",
