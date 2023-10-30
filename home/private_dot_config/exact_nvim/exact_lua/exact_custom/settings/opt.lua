@@ -7,3 +7,4 @@ o.wrap = false
 o.relativenumber = true
 o.scrolloff = 5
 o.sidescrolloff = 28
+o.conceallevel = 1  -- allow certain text elements to be hidden or replaced with alternative representation

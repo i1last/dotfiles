@@ -1,4 +1,10 @@
 local plugins = {
+	-- For snippets
+	{
+		"L3MON4D3/LuaSnip",
+    opts = require("custom.plugins.config.luasnip"),
+	},
+
 	-- Conceal for .tex files
 	{
 		"KeitaNakamura/tex-conceal.vim",
@@ -8,13 +14,6 @@ local plugins = {
 	-- Extends vim's `%`
 	{
 		"andymass/vim-matchup",
-	},
-
-	-- Snippets manager
-	{
-		"SirVer/ultisnips",
-		-- lazy = false,
-		-- config in settings/g.lua
 	},
 
 	-- Package installer
