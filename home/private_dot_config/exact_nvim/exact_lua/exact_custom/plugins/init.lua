@@ -2,7 +2,7 @@ local plugins = {
 	-- For snippets
 	{
 		"L3MON4D3/LuaSnip",
-    opts = require("custom.plugins.config.luasnip"),
+    opts = require("custom.plugins.opts.luasnip"),
 	},
 
 	-- Conceal for .tex files
