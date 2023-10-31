@@ -1,0 +1,41 @@
+## Main
+# xkb-switch
+downgrade
+yay
+betterlockscreen
+rofi-greenclip
+
+## Useful utils
+nodejs-how2
+
+## Dynamic theme (pywal)
+colorz
+python-colorthief
+python-haishoku
+python-pywalfox
+wal-telegram-git
+
+## Applications
+# zoom
+# logmein-hamachi
+notion-app
+figma-agent-linux
+figma-linux-bin
+betterdiscord-git
+
+## Python utils
+python-inkscape-figures
+pywal-discord-git
+
+## Themes
+catppuccin-cursors-macchiato
+catppuccin-cursors-mocha
+catppuccin-gtk-theme-frappe
+catppuccin-gtk-theme-latte
+catppuccin-gtk-theme-macchiato
+catppuccin-gtk-theme-mocha
+yaru-gtk-theme
+whitesur-gtk-theme
+reversal-icon-theme-git
+orchis-theme
+dracula-gtk-theme

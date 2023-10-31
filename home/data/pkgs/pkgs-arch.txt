@@ -1,0 +1,238 @@
+## Kernels
+linux-zen
+linux-zen-headers
+linux-zen-docs
+
+## Main
+grub
+sudo
+base
+base-devel
+linux-firmware
+pacman-contrib
+zram-generator
+
+## Internet
+networkmanager
+dhcpcd
+curl
+# httpie
+wget
+
+## Microcode
+amd-ucode
+
+## Xorg and drivers
+mesa
+lib32-mesa
+
+## Amd drivers
+xf86-video-amdgpu
+xf86-video-ati
+mesa-vdpau
+xf86-input-synaptics
+xf86-video-vesa
+
+## Xorg Related
+xorg
+xorg-apps
+xorg-drivers
+xorg-fonts
+xorg-xfontsel
+xorg-xlsfonts
+xdotool
+
+## Bluetooth
+# blueman
+
+## Audio (ALSA & PULSEAUDIO)
+# pipewire
+# pipewire-jack
+# pipewire-pulse
+pavucontrol
+pulsemixer
+alsa-utils
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-jack
+
+## Filesystem support
+btrfs-progs
+dosfstools
+exfatprogs
+exfat-utils
+f2fs-tools
+mtools
+ntfs-3g
+udftools
+usbutils
+
+## SSH
+openssh
+# nfs-utils
+
+## Polkit
+polkit
+
+## Compression Tools
+# atool
+# cpio
+# lzop
+p7zip
+# unrar
+unzip
+zip
+
+## Dotfiles
+chezmoi
+
+## Password management
+# bitwarden
+# bitwarden-cli
+# pass
+
+## Services
+cronie
+numlockx
+tk
+pkgfile
+
+## Shell
+bash
+bash-completion
+fish
+zsh
+
+## Display manager
+ly
+
+## Window manager
+bspwm
+sxhkd
+polybar
+
+## Notifications
+dunst
+
+## Application launcher
+rofi
+rofimoji
+
+## Terminal
+kitty
+alacritty
+tmux
+
+## File manager
+ranger
+thunar
+thunar-volman
+
+## Pdf
+zathura
+zathura-pdf-mupdf
+mupdf
+pdf2svg
+
+## Docs
+tldr
+
+## Dev
+python
+yarn
+gulp
+npm
+gcc
+
+## Utility
+ncdu
+tree
+trash-cli
+gvfs
+xdg-utils
+xdg-user-dirs
+reflector
+# udiskie
+
+## DOC, PPT, etc. Editing/Conversion
+# libreoffice-fresh
+# pandoc
+# graphviz
+texlive-latexextra
+texlive-binextra
+
+## Media
+mpc
+mpd
+mpv
+ncmpcpp
+yt-dlp
+
+## Image/video/3d
+ffmpeg
+feh
+mediainfo
+sxiv
+
+## Screenshots
+flameshot
+
+## Python utils
+python-pynvim
+python-pip
+python-pywal
+
+## Appearance / theme
+lxappearance
+adapta-gtk-theme
+arc-gtk-theme
+arc-icon-theme
+materia-gtk-theme
+papirus-icon-theme
+
+## Useful tools
+duf
+bat
+diff-so-fancy
+dmidecode
+eza
+fd
+git
+btop
+neofetch
+neovim
+ntp
+ripgrep
+# thefuck
+# vim
+xclip
+xsel
+translate-shell
+
+## Power, brightness
+acpi
+brightnessctl
+
+## Browsers
+firefox
+
+## Extra pkgs
+discord
+telegram-desktop
+inkscape
+obsidian
+
+## Torrent
+aria2
+
+## File sync
+syncthing
+
+## Android
+android-tools
+
+## VirtualBox
+# virtualbox
+# virtualbox-guest-iso
+# virtualbox-host-modules-arch

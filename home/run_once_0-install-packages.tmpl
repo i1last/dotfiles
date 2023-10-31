@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+
+# OPTIONS AND VARIABLES
+readonly AUR_URL='https://aur.archlinux.org/cgit/aur.git/snapshot'
+readonly AUR_HELPER='yay'
+readonly PKGS_ARCH="{{ .chezmoi.sourceDir }}/data/pkgs/pkgs-arch.txt"
+readonly PKGS_FONTS="{{ .chezmoi.sourceDir }}/data/pkgs/pkgs-arch-fonts.txt"
+readonly PKGS_AUR="{{ .chezmoi.sourceDir }}/data/pkgs/pkgs-aur.txt"
+
+# FUNCTIONS
+refreshkeys() {
+  echo "Refreshing Arch Keyring..."
+  sudo pacman -S --noconfirm archlinux-keyring
+}
+
+install_pkg() {
+  echo "Installing package ($1)..."
+  sudo pacman -S --noconfirm --needed "$1"
+}
+
+# aur install using tar method
+manual_install() {
+  if command -v "$1" >/dev/null 2>&1; then
+    echo "$1 already installed! Skipping"
+  else
+    cd /tmp || exit
+    rm -rf /tmp/"$1"*
+    curl -LO "$AUR_URL/$1.tar.gz" &&
+    tar -xvf "$1".tar.gz &&
+    cd "$1" &&
+    makepkg -si --noconfirm
+    cd /tmp || return
+  fi
+}
+
+installation_loop() {
+  [ -f "$2" ] && cp -f "$2" /tmp/pkgs.txt
+  sed '/^#/d' "$2" | sed '/^$/d' | sed ':a; N; $!ba; s/\n/ /g' > /tmp/pkgs.txt
+  case "$1" in
+    "pacman")
+      xargs -a /tmp/pkgs.txt -r -- sudo pacman -S --noconfirm --needed
+      ;;
+    "aur")
+      xargs -a /tmp/pkgs.txt -r -- "$AUR_HELPER" -S --needed
+      ;;
+  esac
+}
+
+
+# THE ACTUAL SCRIPT
+# Make pacman colorful and adds eye candy on the progress bar
+if grep "^Color" /etc/pacman.conf >/dev/null; then
+  :
+else
+  sudo sed -i "s/^#Color$/Color/" /etc/pacman.conf
+fi
+
+if grep "ILoveCandy" /etc/pacman.conf >/dev/null; then
+  :
+else
+  sudo sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
+fi
+
+if grep "^ParallelDownloads" /etc/pacman.conf >/dev/null; then
+  :
+else
+  sudo sed -i "s/^#ParallelDownloads/ParallelDownloads/" /etc/pacman.conf
+fi
+
+refreshkeys
+
+install_pkg base-devel
+install_pkg pacman-contrib
+install_pkg curl
+install_pkg git
+
+manual_install "$AUR_HELPER"
+sudo pacman -Syu
+
+installation_loop pacman "$PKGS_ARCH"
+installation_loop pacman "$PKGS_FONTS"
+installation_loop aur "$PKGS_AUR"
