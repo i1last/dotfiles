@@ -4,6 +4,7 @@ downgrade
 yay
 betterlockscreen
 rofi-greenclip
+update-grub
 
 ## Useful utils
 nodejs-how2
