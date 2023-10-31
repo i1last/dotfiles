@@ -202,6 +202,8 @@ git
 btop
 neofetch
 neovim
+vim-spell-ru
+vim-spell-en
 ntp
 ripgrep
 # thefuck
