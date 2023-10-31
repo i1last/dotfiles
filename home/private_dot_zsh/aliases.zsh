@@ -41,16 +41,8 @@ alias gst="git status"
 alias gp="git push"
 
 # package manager
-yi () {
-  yay -Sy $@
-  echo "$@" >> $LCHEZMOI/home/data/pkgs/pkgs-delta.txt
-}
-yr () {
-  yay -Rsc $@
-  for arg in $@; do 
-    sed -i 's/\b${arg}\b//g' $LCHEZMOI/home/data/pkgs/pkgs-delta.txt
-  done
-}
+alias yi="yay -Sy"
+alias yr="yay -Rsc"
 alias yu="yay -U"
 alias yinf="yay -Si"
 alias yq="yay -Q | grep"
