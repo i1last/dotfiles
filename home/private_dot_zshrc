@@ -42,4 +42,4 @@ antigen apply
 
 source $ALIASES_PATH
 
-bindkey "$" autosuggest-accept  # shift+tab
+# bindkey "" autosuggest-accept  # shift+tab

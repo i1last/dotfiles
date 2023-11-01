@@ -67,3 +67,6 @@ alias t="tmux"
 alias what-is-git="echo -e '  ?   — untracked change(s);\n  +   — staged change(s);\n  !   — file(s) modified in the repo;\n  »   — renamed file(s);\n  —   — deleted file(s);\n  $   — stashed change(s);\n  #   — unmerged change(s);\n  •|  — behind of remote branch;\n  |•  — ahead of remote branch;\n  ~   — Branches have diverged;'"
 alias trt="trans -show-original n -show-original-phonetics n -show-translation-phonetics n -show-prompt-message n -show-dictionary n -show-alternatives n -show-languages n en:ru"
 alias cr="clear"
+
+# dev
+alias "cc++"="clang++ -std=c++20 -Wall"
