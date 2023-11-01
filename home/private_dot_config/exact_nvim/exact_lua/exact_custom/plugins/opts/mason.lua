@@ -14,6 +14,8 @@ local opts = {
 		"texlab",
 		"bash-language-server",
 		"beautysh",
+		"clang-format",
+		"clangd",
 	},
 }
 

@@ -9,6 +9,7 @@ local sources = {
 	formatting.prettier,
 	formatting.stylua,
 	formatting.beautysh,
+	formatting.clang_format,
 
 	lint.jsonlint,
 }
