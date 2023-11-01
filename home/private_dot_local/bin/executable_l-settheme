@@ -1,10 +1,11 @@
 #!/usr/bin/env bash 
 
 colorchemeFile="$LSTATE/colorscheme/colorscheme"
+defaultThemesPath="/usr/lib/python3.11/site-packages/pywal/colorschemes/dark"
 
 updateTheme() {
-  wal-telegram --wal &> /dev/null  # On Telegram Desktop: Settings -> Chat settings -> Choose from file -> "~/.cache/wal-telegram/*.tdesktop-theme" -> Keep changes
-  pywal-discord  # for BetterDiscord
+  wal-telegram --palette "~/.cache/wal/colors.sh" --tiled &> /dev/null  # On Telegram Desktop: Settings -> Chat settings -> Choose from file -> "~/.cache/wal-telegram/*.tdesktop-theme" -> Keep changes
+  pywal-discord &> /dev/null  # for BetterDiscord
 }
 
 setTheme() {
@@ -14,11 +15,9 @@ setTheme() {
     wal -qni $LSHARE/wallpapers/ --backend haishoku
     feh --bg-fill "$(< $LCACHE/wal/wal)"
   else 
-    if [[ $theme =~ $userThemes ]]; then  # if theme in userThemes | that is, if a userTheme is selected
-      wal -qn --backend haishoku --theme $LSHARE/colorschemes/${theme}.json
-    else
-      wal -qn --backend haishoku --theme $theme 
-    fi
+    # If selected theme not in default pack, then use userthemes pack
+    wal -qn --backend haishoku --theme $defaultThemesPath/$theme.json
+    wal -qn --backend haishoku --theme $LSHARE/colorschemes/${theme}.json
 
     feh --bg-fill --randomize $LSHARE/wallpapers/*
   fi
@@ -32,8 +31,7 @@ if [[ $1 == "--only-set" ]]; then
 fi
 
 userThemes=$(ls -1 $LSHARE/colorschemes/ | sed 's/.json//')
-defaultThemes=$(ls -1 /usr/lib/python3.11/site-packages/pywal/colorschemes/dark/ | sed 's/.json//')
+defaultThemes=$(ls -1 $defaultThemesPath | sed 's/.json//')
 themes="auto $userThemes $defaultThemes"
 
-echo $themes | rofi -dmenu -i -p '' -sep ' ' > $colorchemeFile
-setTheme
+echo $themes | rofi -dmenu -i -p '' -sep ' ' > $colorchemeFile && l-settheme --only-set
