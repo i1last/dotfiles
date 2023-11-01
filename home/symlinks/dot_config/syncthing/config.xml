@@ -1,10 +1,10 @@
 <configuration version="37">
     <folder id="vs4ta-4aeyk" label="lsync" path="~/__lsync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="GCF3OBN-X6S6EST-FJPS3DQ-44FKO7A-ABBUK3S-5233NAA-QAC3DUZ-2MHIYQ2" introducedBy="">
+        <device id="62MBGQA-2LQHYXI-YTW55Q6-73SQ5M6-OHUIHYC-XSFSLMH-AOZK2DE-DC7UGAM" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="62MBGQA-2LQHYXI-YTW55Q6-73SQ5M6-OHUIHYC-XSFSLMH-AOZK2DE-DC7UGAM" introducedBy="">
+        <device id="72QS6LL-APK7QLK-7KHQ2EU-J6L7LW6-I2X5LT6-7PEWSEM-2FKFL46-RVTQTQA" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -45,16 +45,6 @@
             <maxTotalSize>4096</maxTotalSize>
         </xattrFilter>
     </folder>
-    <device id="GCF3OBN-X6S6EST-FJPS3DQ-44FKO7A-ABBUK3S-5233NAA-QAC3DUZ-2MHIYQ2" name="larch" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
-        <address>dynamic</address>
-        <paused>false</paused>
-        <autoAcceptFolders>false</autoAcceptFolders>
-        <maxSendKbps>0</maxSendKbps>
-        <maxRecvKbps>0</maxRecvKbps>
-        <maxRequestKiB>0</maxRequestKiB>
-        <untrusted>false</untrusted>
-        <remoteGUIPort>0</remoteGUIPort>
-    </device>
     <device id="62MBGQA-2LQHYXI-YTW55Q6-73SQ5M6-OHUIHYC-XSFSLMH-AOZK2DE-DC7UGAM" name="levo" compression="metadata" introducer="true" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
@@ -64,6 +54,18 @@
         <maxRequestKiB>0</maxRequestKiB>
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
+    </device>
+    <device id="72QS6LL-APK7QLK-7KHQ2EU-J6L7LW6-I2X5LT6-7PEWSEM-2FKFL46-RVTQTQA" name="larch" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
     </device>
     <gui enabled="true" tls="false" debugging="false">
         <address>127.0.0.1:8384</address>
@@ -129,7 +131,7 @@
     <defaults>
         <folder id="" label="" path="~" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
             <filesystemType>basic</filesystemType>
-            <device id="GCF3OBN-X6S6EST-FJPS3DQ-44FKO7A-ABBUK3S-5233NAA-QAC3DUZ-2MHIYQ2" introducedBy="">
+            <device id="72QS6LL-APK7QLK-7KHQ2EU-J6L7LW6-I2X5LT6-7PEWSEM-2FKFL46-RVTQTQA" introducedBy="">
                 <encryptionPassword></encryptionPassword>
             </device>
             <minDiskFree unit="%">1</minDiskFree>
@@ -177,6 +179,7 @@
             <maxRequestKiB>0</maxRequestKiB>
             <untrusted>false</untrusted>
             <remoteGUIPort>0</remoteGUIPort>
+            <numConnections>0</numConnections>
         </device>
         <ignores></ignores>
     </defaults>
