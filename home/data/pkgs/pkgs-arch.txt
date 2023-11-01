@@ -145,7 +145,8 @@ python
 yarn
 gulp
 npm
-gcc
+clang
+lld
 
 ## Utility
 ncdu
