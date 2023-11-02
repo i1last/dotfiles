@@ -31,7 +31,7 @@ ttc-iosevka-ss16
 ttc-iosevka-ss17
 ttc-iosevka-ss18
 ttf-font-awesome
-ttf_jetbrains-mono-nerd
+ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 ttf-opensans
 ttf-roboto

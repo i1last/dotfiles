@@ -61,7 +61,6 @@ pulseaudio-jack
 btrfs-progs
 dosfstools
 exfatprogs
-exfat-utils
 f2fs-tools
 mtools
 ntfs-3g
