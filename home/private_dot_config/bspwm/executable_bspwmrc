@@ -20,16 +20,16 @@ export VISUAL="nvim"
 export SHELL="/usr/bin/zsh"
 
 # Set color scheme and random wallpaper
-l-settheme --only-set
+l-settheme --only-set &> /dev/null
 
 # Init apps
-l-initapps
+l-initapps &> /dev/null
 
 # Init cmds
-l-initcmds
+l-initcmds &> /dev/null
 
 # Setting bspwm
-l-configurebspwm
+l-configurebspwm &> /dev/null
 
 # Notify done
 notify-send "bspwm" "System done"
