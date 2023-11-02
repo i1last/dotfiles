@@ -15,7 +15,7 @@ setTheme() {
     wal -qni $LSHARE/wallpapers/ --backend haishoku
     feh --bg-fill "$(< $LCACHE/wal/wal)"
   else 
-    # If selected theme not in default pack, then use userthemes pack
+    # If selected theme not in default pack, then use user pack
     wal -qn --backend haishoku --theme $defaultThemesPath/$theme.json
     wal -qn --backend haishoku --theme $LSHARE/colorschemes/${theme}.json
 

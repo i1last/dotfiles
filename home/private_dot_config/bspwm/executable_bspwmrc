@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 # Init vars
 export PATH="$HOME/.local/bin:${PATH}"
 export LCACHE="$HOME/.cache"
@@ -20,16 +19,16 @@ export VISUAL="nvim"
 export SHELL="/usr/bin/zsh"
 
 # Set color scheme and random wallpaper
-l-settheme --only-set &> /dev/null
+l-settheme --only-set
 
 # Init apps
-l-initapps &> /dev/null
+l-initapps
 
 # Init cmds
-l-initcmds &> /dev/null
+l-initcmds
 
 # Setting bspwm
-l-configurebspwm &> /dev/null
+l-configurebspwm
 
 # Notify done
 notify-send "bspwm" "System done"
