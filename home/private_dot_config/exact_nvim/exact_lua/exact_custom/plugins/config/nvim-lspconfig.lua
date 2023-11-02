@@ -5,7 +5,7 @@ local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
 local lspconfig = require("lspconfig")
-local servers = { "html", "bashls", "clangd" }
+local servers = { "html", "bashls" }
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
@@ -49,4 +49,10 @@ lspconfig.texlab.setup({
 			args = { "--synctex-forward", "%l:1:%f", "%p" },
 		},
 	},
+})
+
+lspconfig.clangd.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	cmd = { "clangd", "--offset-encoding=utf-16" },
 })
