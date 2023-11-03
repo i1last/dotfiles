@@ -2,6 +2,10 @@
 super + Return
   $TERMINAL
 
+# Open floating terminal
+super + x
+  bspc rule --add $TERMINAL -o state=floating center=on rectangle=1024x512+0+0 && $TERMINAL --directory ~ &>/dev/null
+
 # open rofi
 super + z
   rofi -no-lazy-grab -show drun
