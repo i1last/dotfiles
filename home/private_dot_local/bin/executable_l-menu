@@ -47,7 +47,7 @@ case ${chosen} in
     betterlockscreen -l
     ;;
   $restart)
-    sh $LBSPWM/bspwmrc
+    bspc wm --restart
     ;;
   $suspend)
     confirm_run_cmd --suspend
