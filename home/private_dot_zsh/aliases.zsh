@@ -69,4 +69,6 @@ alias trt="trans -show-original n -show-original-phonetics n -show-translation-p
 alias cr="clear"
 
 # dev
-alias "cc++"="clang++ -std=c++20 -Wall"
+cc++() {
+  clang++ -std=c++20 -Wall $1 -o $1.out
+}
