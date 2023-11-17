@@ -56,6 +56,7 @@ pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-jack
+libpulse
 
 ## Filesystem support
 btrfs-progs
