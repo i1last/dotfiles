@@ -2,7 +2,10 @@
 
 local opts = {
 	ensure_installed = {
+    -- lua
 		"lua-language-server",
+
+    -- web
 		"html-lsp",
 		"prettier",
 		"stylua",
@@ -10,12 +13,21 @@ local opts = {
 		"emmet-ls",
 		"css-lsp",
 		"eslint_d",
-		"chrome-debug-adapter",
+
+    -- tex
 		"texlab",
+
+    -- bash
 		"bash-language-server",
 		"beautysh",
+
+    -- c/c++
 		"clang-format",
 		"clangd",
+		"codelldb",
+
+    -- python
+		-- "debugpy",
 	},
 }
 

@@ -33,4 +33,16 @@ M.inkscapefigures = {
 	},
 }
 
+M.dap = {
+  plugin = true,
+	n = {
+		["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>", "Toggle breakpoint at line" },
+		["<leader>dc"] = { "<cmd> DapContinue <CR>", "Start or continue the debugger" },
+		["<leader>dt"] = { "<cmd> DapTerminate <CR>", "Terminate the debugger" },
+		["<leader>di"] = { "<cmd> DapStepInto <CR>", "Step into the debugger" },
+		["<leader>do"] = { "<cmd> DapStepOut <CR>", "Step out the debugger" },
+		["<leader>ds"] = { "<cmd> DapStepOver <CR>", "Step over the debugger" },
+	},
+}
+
 return M

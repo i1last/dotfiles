@@ -1,8 +1,37 @@
 local plugins = {
+	-- Client for Debug Adapter Protocol
+	{
+		"mfussenegger/nvim-dap",
+		config = function(_, _)
+			require("custom.plugins.config.nvim-dap")
+		end,
+	},
+
+  -- Bridges mason.nvim with the nvim-dap plugins
+	{
+		"jay-babu/mason-nvim-dap.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"williamboman/mason.nvim",
+			"mfussenegger/nvim-dap",
+		},
+		opts = require("custom.plugins.opts.mason-nvim-dap"),
+	},
+
+	-- UI for nvim-dap plugin
+	{
+		"rcarriga/nvim-dap-ui",
+		event = "VeryLazy",
+		requires = { "mfussenegger/nvim-dap" },
+		config = function()
+			require("custom.plugins.config.nvim-dap-ui")
+		end,
+	},
+
 	-- For snippets
 	{
 		"L3MON4D3/LuaSnip",
-    opts = require("custom.plugins.opts.luasnip"),
+		opts = require("custom.plugins.opts.luasnip"),
 	},
 
 	-- Conceal for .tex files
