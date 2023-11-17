@@ -27,7 +27,7 @@ local opts = {
 		"codelldb",
 
     -- python
-		-- "debugpy",
+		"debugpy",
 	},
 }
 

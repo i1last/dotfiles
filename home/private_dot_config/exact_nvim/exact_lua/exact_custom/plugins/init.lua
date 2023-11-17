@@ -2,12 +2,12 @@ local plugins = {
 	-- Client for Debug Adapter Protocol
 	{
 		"mfussenegger/nvim-dap",
-		config = function(_, _)
+		config = function()
 			require("custom.plugins.config.nvim-dap")
 		end,
 	},
 
-  -- Bridges mason.nvim with the nvim-dap plugins
+	-- Bridges mason.nvim with the nvim-dap plugins
 	{
 		"jay-babu/mason-nvim-dap.nvim",
 		event = "VeryLazy",
@@ -15,7 +15,9 @@ local plugins = {
 			"williamboman/mason.nvim",
 			"mfussenegger/nvim-dap",
 		},
-		opts = require("custom.plugins.opts.mason-nvim-dap"),
+		opts = {
+			handlers = {},
+		},
 	},
 
 	-- UI for nvim-dap plugin
@@ -25,6 +27,19 @@ local plugins = {
 		requires = { "mfussenegger/nvim-dap" },
 		config = function()
 			require("custom.plugins.config.nvim-dap-ui")
+		end,
+	},
+
+	-- Extension for nvim-dap plugin providing default configurations for python and more
+	{
+		"mfussenegger/nvim-dap-python",
+		ft = "python",
+		dependencies = {
+			"mfussenegger/nvim-dap",
+			"rcarriga/nvim-dap-ui",
+		},
+		config = function()
+			require("custom.plugins.config.nvim-dap-python")
 		end,
 	},
 
