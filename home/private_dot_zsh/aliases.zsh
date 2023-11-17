@@ -72,3 +72,6 @@ alias cr="clear"
 cc++() {
   clang++ -std=c++20 -Wall $1 -o $1.out
 }
+cc++d() {
+  clang++ --debug $1 -o $1.debug-out
+}
