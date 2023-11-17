@@ -11,7 +11,7 @@ return {
         <>
       ]],
 			{
-				i(1, "interpretator"),
+				i(1, "bash"),
 				i(0),
 			}
 		)

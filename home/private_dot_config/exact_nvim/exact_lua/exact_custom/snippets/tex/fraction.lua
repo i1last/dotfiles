@@ -5,17 +5,21 @@ return {
 		{
 			trig = "([^%a])ff",
 			dscr = "frac for tex",
-      snippetType = "autosnippet",
-      regTrig = true,
-      wordTrig = false,
+			snippetType = "autosnippet",
+			regTrig = true,
+			wordTrig = false,
 		},
-    fmta(
-      [[<>\frac{<>}{<>}]],
-      {
-        f( function(_, snip) return snip.captures[1] end ),
-        i(1),
-        i(2)
-      }
-    )
+		fmta(
+			[[
+        <>\frac{<>}{<>}
+      ]],
+			{
+				f(function(_, snip)
+					return snip.captures[1]
+				end),
+				i(1),
+				i(2),
+			}
+		)
 	),
 }
