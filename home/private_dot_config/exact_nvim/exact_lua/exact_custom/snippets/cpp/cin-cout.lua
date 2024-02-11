@@ -9,8 +9,7 @@ return {
 		},
 		fmt(
 			[[
-        {}std::cin >> {};
-         {}
+        {}std::cin >> {};{}
       ]],
 			{
 				f(function(_, snip)
@@ -31,8 +30,7 @@ return {
 		},
 		fmt(
 			[[
-        {}std::cout << {} << "\n";
-         {}
+        {}std::cout << {} << "\n";{}
       ]],
 			{
 				f(function(_, snip)

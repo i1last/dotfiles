@@ -22,4 +22,23 @@ return {
 			}
 		)
 	),
+	s(
+		{
+			trig = "([^%a])if",
+			dscr = "if (%) ",
+			snippetType = "autosnippet",
+			regTrig = true,
+			wordTrig = false,
+		},
+		fmta(
+			[[
+        <>if (<>) <>
+      ]],
+			{
+				f(function(_, snip) return snip.captures[1] end),
+				i(1),
+        i(0)
+			}
+		)
+	),
 }
