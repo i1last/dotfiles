@@ -6,6 +6,7 @@
   ],
   "app": {
     "logLevel": 1,
+    "lastTimeClearLogFile": 1707390893083,
     "enableColorSpaceSrgb": false,
     "visibleNewProjectBtn": true,
     "useZenity": false,
@@ -13,15 +14,23 @@
     "panelHeight": 40,
     "saveLastOpenedTabs": true,
     "exportDir": "/home/i1last/Downloads/Figma",
+    "commandSwitches": [
+      {
+        "switch": "enable-gpu-rasterization"
+      },
+      {
+        "switch": "enable-experimental-canvas-features"
+      },
+      {
+        "switch": "use-vulkan"
+      }
+    ],
     "fontDirs": [
       "/home/i1last/.local/share/fonts"
     ],
-    "lastOpenedTabs": [
-      {
-        "title": "Untitled",
-        "url": "https://www.figma.com/file/pL3ouaupcSM52rVhekcziL/Untitled?type=whiteboard"
-      }
-    ],
+    "recentlyClosedTabs": [],
+    "windowsState": {},
+    "lastOpenedTabs": [],
     "featureFlags": {
       "comments_on_the_canvas": true,
       "voice_captions_enabled": true,
@@ -55,9 +64,19 @@
       "desktop_community_tab_dev": false,
       "desktop_community_tab_rollout": false,
       "desktop_tab_discarding": true,
-      "desktop_tab_discarding_beta": true
+      "desktop_tab_discarding_beta": true,
+      "desktop_live_updates_rollout": false,
+      "desktop_live_updates_presenter": true,
+      "desktop_live_updates_at_mention": true,
+      "desktop_web_logout": true,
+      "desktop_live_updates_rollout_v2": true,
+      "desktop_no_custom_trafficlights": true
     },
     "savedExtensions": [],
+    "themeDropdownOpen": true,
+    "creatorsThemesDropdownOpen": false,
+    "useOldPreviewer": false,
+    "dontShowTutorialCreator": false,
     "lastExportDir": "/home/i1last/Downloads"
   },
   "theme": {
